@@ -197,19 +197,25 @@
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">display: flex;</span><br><span class="line">display: -webkit-flex; /* webkit */</span><br><span class="line">--------------</span><br><span class="line">display: inline-flex;</span><br><span class="line">display: -webkit-inline-flex; /* webkit */</span><br></pre></td></tr></table></figure>
 <h4 id="2-Container"><a href="#2-Container" class="headerlink" title="2. Container"></a>2. Container</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">flex-direction: row | row-reverse | column | column-reverse;</span><br><span class="line">--------------</span><br><span class="line">flex-wrap: nowrap | wrap | wrap-reverse;</span><br><span class="line">--------------</span><br><span class="line">flex-flow: &lt;flex-direction&gt; || &lt;flex-wrap&gt;;</span><br><span class="line">--------------</span><br><span class="line">justify-content: flex-start | flex-end | center | space-between | space-around;</span><br><span class="line">--------------</span><br><span class="line">align-items: flex-start | flex-end | center | baseline | stretch;</span><br><span class="line">--------------</span><br><span class="line">align-content: flex-start | flex-end | center | space-between | space-around | stretch;</span><br></pre></td></tr></table></figure>
 <h4 id="3-Item"><a href="#3-Item" class="headerlink" title="3. Item"></a>3. Item</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">order: &lt;<span class="built_in">integer</span>&gt;;</span><br><span class="line">--------------</span><br><span class="line">flex-grow: &lt;number&gt;; /* default 0 */</span><br><span class="line">--------------</span><br><span class="line">flex-shrink: &lt;number&gt;; /* default 1 */</span><br><span class="line">--------------</span><br><span class="line">flex-basis: &lt;length&gt;; | auto; /* default auto */</span><br><span class="line">--------------</span><br><span class="line">flex: none | [ &lt;<span class="string">'flex-grow'</span>&gt; &lt;<span class="string">'flex-shrink'</span>&gt;? || &lt;<span class="string">'flex-basis'</span>&gt; ]</span><br><span class="line">--------------</span><br><span class="line">align-self: auto | flex-start | flex-end | center | baseline | stretch;</span><br></pre></td></tr></table></figure>
-<h4 id="Demo"><a href="#Demo" class="headerlink" title="Demo"></a>Demo</h4><div class="flex-container"><br>    <div class="flex-item">1</div><br>    <div class="flex-item">2</div><br>    <div class="flex-item">3</div><br>    <div class="flex-item">4</div><br>    <div class="flex-item">5</div><br></div>
+<h4 id="Demo"><a href="#Demo" class="headerlink" title="Demo"></a>Demo</h4><div class="flex-container"><br>    <div class="flex-item">1</div><br>    <div class="flex-item">2</div><br>    <div class="flex-item">3</div><br>    <div class="flex-item">4</div><br>    <div class="flex-item">5</div><br></div><br><div class="flex-container flex-direction"><br>    <div class="flex-item">1</div><br>    <div class="flex-item">2</div><br>    <div class="flex-item">3</div><br>    <div class="flex-item">4</div><br>    <div class="flex-item">5</div><br></div>
 
 <style>
 .flex-container{
-  width: 100%;
   background: rgba(144,144,144,0.1);
   display: flex;
   display: -webkit-flex;
-  padding: 5px;
+  padding: 3px;
+}
+.flex-container br{
+  display: none;
+}
+.flex-direction{
+  flex-direction: column;
 }
 .flex-item{
   width: 50px;
   height: 50px;
+  margin: 3px;
   background: rgba(0,0,0,0.2);
   text-align: center;
   line-height: 50px;
