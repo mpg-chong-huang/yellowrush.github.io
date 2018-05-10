@@ -35,7 +35,7 @@ function create_CCS_chart() {
     d3.select("#annotation-explanation").style("display", null);
 
 
-    var base_width = 1600;
+    var base_width = 1610;
     var ww = window.innerWidth,
         wh = window.innerHeight;
     var width_too_small = ww < 500;
