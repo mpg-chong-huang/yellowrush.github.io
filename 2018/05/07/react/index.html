@@ -20,7 +20,7 @@
 
     <!--Open Graph Title-->
     
-        <meta property="og:title" content="react"/>
+        <meta property="og:title" content="React Start-kit"/>
     
 
     <!--Open Graph Description-->
@@ -44,7 +44,7 @@
 
     <!-- Title -->
     
-    <title>react - yellowrush</title>
+    <title>React Start-kit - yellowrush</title>
 
     <!-- Bootstrap Core CSS -->
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" integrity="sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd" crossorigin="anonymous">
@@ -151,7 +151,7 @@
     <div class="post-header">
         <h1 class="title">
             <a href="/2018/05/07/react/">
-                react
+                React Start-kit
             </a>
         </h1>
         <div class="post-info">
@@ -177,11 +177,25 @@
         
 
         <!-- Post Content -->
-        <p>Instead of trying <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Box_Model/Introduction_to_the_CSS_box_model" target="_blank" rel="noopener">CSS Box model</a>, which structuring the basis layout with <code>display</code> + <code>position</code> + <code>float</code>. Now we are going to have a full review of the new w3c Working Draft for layout solution : <a href="https://www.w3.org/TR/css-flexbox-1/" target="_blank" rel="noopener">Flexbox</a>,</p>
-<p><code>💡 Flexbox layout is most appropriate for small-scale layouts</code></p>
+        <p>for a quick start up of React + Webpack project <a href="https://github.com/yellowrush/react-seed" target="_blank" rel="noopener">react-seed</a>, simply checkout my github project with your star ⭐ would be really appreciated.</p>
+<h1 id="React-Webpack-StartUp"><a href="#React-Webpack-StartUp" class="headerlink" title="React Webpack StartUp"></a>React Webpack StartUp</h1><h2 id="Folder-Structure"><a href="#Folder-Structure" class="headerlink" title="Folder Structure"></a>Folder Structure</h2><p>After creation, your project should look like this:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">my-app/</span><br><span class="line">  README.md</span><br><span class="line">  build/</span><br><span class="line">    webpack</span><br><span class="line">  dist/</span><br><span class="line">    index.html</span><br><span class="line">    favicon.ico</span><br><span class="line">  src/</span><br><span class="line">    App.js</span><br><span class="line">    index.js</span><br></pre></td></tr></table></figure>
+<p>For the project to build, <strong>these files must exist with exact filenames</strong>:</p>
+<ul>
+<li><code>dist/index.html</code> is the page template;</li>
+<li><code>src/index.js</code> is the JavaScript entry point.</li>
+</ul>
+<p>You can delete or rename the other files.</p>
+<p>You may create subdirectories inside <code>src</code>. For faster rebuilds, only files inside <code>src</code> are processed by Webpack.<br><br>You need to <strong>put any JS and CSS files inside <code>src</code></strong>, otherwise Webpack won’t see them.</p>
+<p>Only files inside <code>dist</code> can be used from <code>dist/index.html</code>.<br><br>Read instructions below for using assets from JavaScript and HTML.</p>
+<p>You can, however, create more top-level directories.<br><br>They will not be included in the production build so you can use them for things like documentation.<br>for example JsDoc and just exclude them in your <code>_gitignore</code> file</p>
 <a id="more"></a>
-<h5 id="browser-support"><a href="#browser-support" class="headerlink" title="browser support"></a>browser support</h5><p>before starting flex, please make sure that your project in targeted in the right device.<br>checkout the following image and checkout the details by clicking the following link <a href="https://caniuse.com/#feat=flexbox/" target="_blank" rel="noopener">Flexbox support</a></p>
-<p><img src="2018-05-07_flexbox.png" alt=""></p>
+<h2 id="Available-Scripts"><a href="#Available-Scripts" class="headerlink" title="Available Scripts"></a>Available Scripts</h2><p>In the project directory, you can run:</p>
+<h3 id="npm-start"><a href="#npm-start" class="headerlink" title="npm start"></a><code>npm start</code></h3><p>Runs the app in the development mode.<br><br>Open <a href="http://localhost:8080" target="_blank" rel="noopener">http://localhost:8080</a> to view it in the browser.</p>
+<p>The page will reload if you make edits.<br><br>You will also see any lint errors in the console.</p>
+<h3 id="npm-test"><a href="#npm-test" class="headerlink" title="npm test"></a><code>npm test</code></h3><p>Launches the test runner in the interactive watch mode.<br><br>See the section about <a href="#running-tests">running tests</a> for more information.</p>
+<h3 id="npm-run-build"><a href="#npm-run-build" class="headerlink" title="npm run build"></a><code>npm run build</code></h3><p>Builds the app for production to the <code>build</code> folder.<br><br>It correctly bundles React in production mode and optimizes the build for the best performance.</p>
+<p>The build is minified and the filenames include the hashes.<br><br>Your app is ready to be deployed!</p>
 
     </div>
 
@@ -239,7 +253,7 @@
             </li>
             
             <li>
-                <a class="footer-post" href="/2018/05/07/react/">react</a>
+                <a class="footer-post" href="/2018/05/07/react/">React Start-kit</a>
             </li>
             
             <li>
@@ -261,11 +275,11 @@
     <ul>
         
         <li>
-            <a class="footer-post" href="/categories/data/">data</a>
+            <a class="footer-post" href="/categories/daily/">daily</a>
         </li>
         
         <li>
-            <a class="footer-post" href="/categories/daily/">daily</a>
+            <a class="footer-post" href="/categories/data/">data</a>
         </li>
         
         <li>
@@ -302,7 +316,7 @@
                     
                     
                     <li class="list-inline-item">
-                        <a href="https://plus.google.com/">
+                        <a href="https://plus.google.com/104271852209376592000">
                             <span class="footer-icon-container">
                                 <i class="fab fa-google-plus"></i>
                             </span>
@@ -322,7 +336,7 @@
                     
                     
                     <li class="list-inline-item">
-                        <a href="\#">
+                        <a href="/atom.xml">
                             <span class="footer-icon-container">
                                 <i class="fas fa-rss"></i>
                             </span>
