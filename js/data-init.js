@@ -62,7 +62,6 @@ function create_CCS_chart() {
     var annotation_padding = width_too_small ? 0 : 240 * size_factor;
     var total_chart_width = width + annotation_padding;
     var no_scrollbar_padding = total_chart_width > ww ? 0 : 20;
-    if(total_chart_width > ww) document.body.style.width = total_chart_width + 'px';
     var outer_container_width = Math.min(base_width, ww - no_scrollbar_padding - 2*20); //2 * 20px padding
     d3.selectAll(".outer-container").style("width", outer_container_width + "px");
 

@@ -341,6 +341,7 @@
 }
 
 .name-label {
+    fill: #ffffff;
 }
 .last-name-label {
     fill: #ffffff;
@@ -349,7 +350,9 @@
 .chapter-number {
     fill: #ffffff;
 }
-
+.line-label{
+    fill: #ffffff;
+}
 .card-label {
     fill: #ffffff;
     cursor: default;
@@ -373,8 +376,7 @@
     font-weight: 400;
 }
 .annotation-note-label {
-    font-size: 13px;
-    font-size: var(--annotation-label-font-size);
+    font-size: 8px;
     font-family: 'Barlow Semi Condensed', sans-serif;
 }
 
